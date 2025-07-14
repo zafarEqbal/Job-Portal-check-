@@ -25,7 +25,7 @@ export const register = async (req,res) =>{
             })
         }
         const hashedPassword = await bcrypt.hash(password,10) ;
-
+        // Creating a new user in the MongoDB database using the User model
         await User.create({
             fullname,
             email,
@@ -35,7 +35,7 @@ export const register = async (req,res) =>{
             profile:{
                 profilePhoto:cloudResponse.secure_url ,
             }
-        }) ;
+        }) ; 
         return res.status(201).json({
             message:'Account created successully',
             success:true
