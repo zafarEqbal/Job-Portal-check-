@@ -1,4 +1,4 @@
-export const BASE_API = "https://job-portal-check-3.onrender.com/api/v1";
+export const BASE_API = "https://job-portal-check-4.onrender.com/api/v1";
 
 export const USER_API_END_POINT = `${BASE_API}/user`;
 export const JOB_API_END_POINT = `${BASE_API}/job`;
